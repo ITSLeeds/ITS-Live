@@ -33,9 +33,13 @@ If you get a message containing the words `Hello from Docker!` congratulations, 
 Likewise, to run the ITS-Leeds docker image, enter:
 
 ```
-docker run ITS-Live
+ sudo docker run -d -p 8787:8787 robinlovelace/itslive
 ```
 
+Then, in your browser open,
+```
+http://localhost:8787/
+```
 
 ## Installation via local .deb package
 
