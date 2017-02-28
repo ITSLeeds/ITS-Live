@@ -47,6 +47,11 @@ http://localhost:8787/
 
 ## Advanced 
 
+To run a stock ubuntu VM (which appears in the terminal),
+```
+ sudo docker run -i -t ubuntu /bin/bash
+```
+
 To view all currently running containers:
 ```
 docker ps
