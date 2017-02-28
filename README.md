@@ -51,6 +51,9 @@ To run a stock ubuntu VM (which appears in the terminal),
 ```
  sudo docker run -i -t ubuntu /bin/bash
 ```
+NB the -it gives us an interactive terminal (in the current termainal window).
+
+
 To view all installed images:
 ```
 docker images
@@ -65,7 +68,6 @@ Kill a container,
 docker kill 1636a463032d
 ```
 
-Note: if you want to install your docker files remotely, e.g. to your an 'extra' folder on your computer,
 edit the relevant file (e.g. `/etc/default/docker` on Ubuntu) so it becomes, as documented
 [here](https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169):
 
