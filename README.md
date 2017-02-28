@@ -13,6 +13,8 @@ Once you've decided how you want to run ITS-Live, please skip to the relevant in
 
 ## Docker
 
+The Dockerfile defining itslive is located here: https://github.com/ITSLeeds/ITS-Live/blob/master/docker/Dockerfile
+
 To install via Docker, you first need to install Docker on your computer.
 Follow install instructions depending on operating system [here](https://www.docker.com/products/overview).
 If you're running Ubuntu, the relevant page to install Docker is
@@ -29,8 +31,16 @@ If you get a message containing the words `Hello from Docker!` congratulations, 
 Likewise, to run the ITS-Leeds docker image, enter:
 
 ```
-docker run ITS-Live
+docker run robinlovelace/itslive
 ```
+
+To run RStudio from a browser on this docker instance, use the following:
+
+```
+docker run -d -p 8787:8787 robinlovelace/itsleeds
+```
+
+Then open a browser and navigate to http://localhost:8787/ (or if you're using Windows or Mac, follow [these instructions](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)).
 
 Note: if you want to install your docker files remotely, e.g. to your an 'extra' folder on your computer,
 edit the relevant file (e.g. `/etc/default/docker` on Ubuntu) so it becomes, as documented
