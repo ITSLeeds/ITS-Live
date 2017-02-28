@@ -28,7 +28,7 @@ docker run hello-world
 If you get a message containing the words `Hello from Docker!` congratulations, your Docker install has worked!
 
 
-### Run itsleeds in Docker
+### Run itslive R tools in Docker
 
 Likewise, to run the ITS-Leeds docker image, enter:
 
@@ -40,6 +40,11 @@ Then, in your browser open,
 ```
 http://localhost:8787/
 ```
+
+### Run itslive Python tools in Docker
+
+sudo docker run -it charleswfox/itslivepy
+
 
 ## Installation via local .deb package
 
