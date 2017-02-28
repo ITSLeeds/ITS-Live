@@ -47,6 +47,15 @@ http://localhost:8787/
 
 ## Advanced 
 
+To view all currently running containers:
+```
+docker ps
+```
+Kill a container,
+```
+docker kill 1636a463032d
+```
+
 Note: if you want to install your docker files remotely, e.g. to your an 'extra' folder on your computer,
 edit the relevant file (e.g. `/etc/default/docker` on Ubuntu) so it becomes, as documented
 [here](https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169):
