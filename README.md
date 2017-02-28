@@ -68,6 +68,21 @@ Kill a container,
 docker kill 1636a463032d
 ```
 
+Making a docker:
+Make a file called Dockerfile like this (which bases off a stock ubuntu container):
+```
+FROM ubuntu:latest
+RUN apt-get -y update && apt-get install -y vim
+RUN apt-get -y update && apt-get install -y python
+RUN apt-get -y update && apt-get install -y python-scipy
+```
+Build with
+```
+sudo docker build -t docker-whale .
+```
+(this creates a new image on the local machine which can be seen with "docker images")
+
+
 edit the relevant file (e.g. `/etc/default/docker` on Ubuntu) so it becomes, as documented
 [here](https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169):
 
