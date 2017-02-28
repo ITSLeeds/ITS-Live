@@ -2,7 +2,7 @@
 
 Software for Transport Data Science
 
-This project is designed to enable reproducible computing in transport research.
+This project is designed to enable reproducible computing in transport research and teaching.
 
 The software stack provided runs on Ubuntu 16.04, either installed onto your computer's hard drive, in a virtual machine, or in a docker file.
 Once you've decided how you want to run ITS-Live, please skip to the relevant install options below.
