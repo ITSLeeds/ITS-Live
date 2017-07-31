@@ -1,2 +1,4 @@
-FROM rocker/hadleyverse
-RUN apt-get -y update && apt-get install -y fortunes
+FROM rocker/geospatial
+MAINTAINER "Robin Lovelace" rob00x@gmail.com
+RUN install2.r --error \
+    stplanr
