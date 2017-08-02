@@ -47,6 +47,12 @@ docker run -d -p 8787:8787 robinlovelace/itsleeds
 
 Then open a browser and navigate to http://localhost:8787/ (or if you're using Windows or Mac, follow [these instructions](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)).
 
+To input and output data on your local machine, use volumes with the `-v` argument. The following command, for example, creates a folder at `/data` in the container that is synced to the folder on the D drive of the host machine:
+
+```
+ docker run -d -p 8787:8787 -v D:/data:/data robinlovelace/itslive:master
+```
+
 
 ### Optional techie stuff
 
